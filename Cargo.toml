@@ -1,0 +1,11 @@
+[package]
+name = "portfolio-rocket"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.37"
+google-generative-ai-rs = "0.2.4"
+lazy_static = "1.4.0"
+rocket = { version = "0.5.0", features = ["json"] }
+rocket_dyn_templates = { version = "0.1.0", features = ["tera"], template_dir = "templates/"}

@@ -1,0 +1,26 @@
+{% block content %}
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Rocket Form Example</title>
+    </head>
+    <body>
+        <h1>Form Example</h1>
+        
+        <ul>
+          {% for c in conversation %}
+            <li><p> {{ c }} </p></li>
+          {% endfor %}
+        </ul>
+
+        <form action="/submit" method="post">
+          <input type="text">
+          <input type="submit" value="submit">
+        </form> 
+    </body>
+  </html>
+
+{% endblock content %}
