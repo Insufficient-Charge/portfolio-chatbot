@@ -6,8 +6,8 @@ use rocket::tokio::{sync::Mutex, task::JoinHandle};
 use std::env;
 
 lazy_static::lazy_static! {
-    static ref REQUEST_HANDLE_MUTEX: Mutex<Vec<JoinHandle<()>>> = Mutex::new(vec![]);
-    static ref CONVERSATION_MUTEX: Mutex<Vec<String>> = Mutex::new(vec![]);
+    pub static ref REQUEST_HANDLE_MUTEX: Mutex<Vec<JoinHandle<()>>> = Mutex::new(vec![]);
+    pub static ref CONVERSATION_MUTEX: Mutex<Vec<String>> = Mutex::new(vec![]);
 }
 
 pub const TEXT_REQUEST_PREAMBLE: &str = 
