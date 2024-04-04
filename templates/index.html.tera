@@ -5,10 +5,11 @@
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
-      <title>Rocket Form Example</title>
+      <meta http-equiv="refresh" content="10">
+      <title>ChatJPB</title>
     </head>
     <body>
-        <h1>Form Example</h1>
+        <h1>Welcome to ChatJPB!</h1>
         
         <ul>
           {% for c in conversation %}
